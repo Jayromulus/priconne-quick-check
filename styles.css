@@ -1,0 +1,35 @@
+.character-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+}
+
+/* iPhone 6/7/8 & iPhone X PORTRAIT */
+@media screen and (max-width: 400px) {
+  .character-container img {
+    width: 33%
+  }
+}
+
+.character-display {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  
+}
+
+.character-display-hidden {
+  display: none;
+}
+
+body {
+  background-image: url('./clean-gray-paper.png');
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+}
