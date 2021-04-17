@@ -70,6 +70,7 @@ let checkCharacter = async (character) => {
   const name = document.createElement('h2');
   name.innerHTML = '<p>just go to <a href="https://shioris-library.com/?">https://shioris-library.com/?</a> lmao it\'ll save both of us time';
   name.innerHTML += `\n${characters[character.name]}`;
+  name.innerHTML += '<a target="_blank" href="https://www.priconneglobal.info/articles/rank8-6_vs_rank9-3_suggestions">INFORMATION FROM THIS ARTICLE</a>'
   name.style.color = 'white';
   name.addEventListener('click', () => {
     charDisplay.classList.toggle('character-display-hidden')
