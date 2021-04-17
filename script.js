@@ -21,7 +21,7 @@ const characters = {
   Kasumi: '',
   Kaori: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
   Kurumi: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
-  Kyouka: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
+  Kyoka: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
   Kuka: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
   Kokkoro: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
   Kyarl: '<h1>PVP: 9-3</h1><h1>CB: 9-3</h1>',
