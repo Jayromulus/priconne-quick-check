@@ -89,13 +89,7 @@ let displayIcons = (json) => {
   }
 
   console.log('CHARACTER LIST:', charList)
-  charList.sort((a, b) => {
-    if(a.name.charCodeAt(0) < b.name.charCodeAt(0))
-      return -1;
-    if(a.name.charCodeAt(0) > b.name.charCodeAt(0))
-      return 1;
-    return 0;
-  })
+  charList.sort((a, b) => a.name.localeCompare(b.name))
   console.log('CHARACTER LIST:', charList)
 
   for (char of charList) {
