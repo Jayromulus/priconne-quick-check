@@ -20,12 +20,20 @@
   z-index: 1;
   background-color: black;
   position: absolute;
-  
 }
 
 .character-display-hidden {
   display: none;
 }
+
+.bottom-link {
+  position: fixed;
+  bottom: 0;
+  font-size: 12pt;
+  text-align: center;
+  width: 100%
+}
+
 
 body {
   background-image: url('./clean-gray-paper.png');
@@ -33,3 +41,4 @@ body {
   margin: 0;
   padding: 0;
 }
+
