@@ -128,7 +128,7 @@ let checkCharacter = async (character) => {
     hp = character.stats.base[character.rarity - 1].hp + (character.stats.growth[character.rarity - 1].hp * 93)
     hpRecoveryRate = character.stats.base[character.rarity - 1].hp_recovery_rate + (character.stats.growth[character.rarity - 1].hp_recovery_rate * 93)
     lifesteal = character.stats.base[character.rarity - 1].life_steal + (character.stats.growth[character.rarity - 1].life_steal * 93)
-    magicCritRate = character.stats.base[character.rarity - 1].magic_critial + (character.stats.growth[character.rarity - 1].magic_critial * 93)
+    magicCritRate = character.stats.base[character.rarity - 1].magic_critical + (character.stats.growth[character.rarity - 1].magic_critical * 93)
     magicDefense = character.stats.base[character.rarity - 1].magic_def + (character.stats.growth[character.rarity - 1].magic_def * 93)
     magicPenetrate = character.stats.base[character.rarity - 1].magic_penetrate + (character.stats.growth[character.rarity - 1].magic_penetrate * 93)
     magicAttack = character.stats.base[character.rarity - 1].magic_str + (character.stats.growth[character.rarity - 1].magic_str * 93)
@@ -152,7 +152,7 @@ let checkCharacter = async (character) => {
       hp += character.stats.bond[i].hp ? character.stats.bond[i].hp : 0
       hpRecoveryRate += character.stats.bond[i].hp_recovery_rate ? character.stats.bond[i].hp_recovery_rate : 0
       lifesteal += character.stats.bond[i].life_steal ? character.stats.bond[i].life_steal : 0
-      magicCritRate += character.stats.bond[i].magic_critial ? character.stats.bond[i].magic_critial : 0
+      magicCritRate += character.stats.bond[i].magic_critical ? character.stats.bond[i].magic_critical : 0
       magicDefense += character.stats.bond[i].magic_def ? character.stats.bond[i].magic_def : 0
       magicPenetrate += character.stats.bond[i].magic_penetrate ? character.stats.bond[i].magic_penetrate : 0
       magicAttack += character.stats.bond[i].magic_str ? character.stats.bond[i].magic_str : 0
@@ -174,7 +174,7 @@ let checkCharacter = async (character) => {
   // character.stats.bond[i].hp
   // character.stats.bond[i].hp_recovery_rate
   // character.stats.bond[i].life_steal
-  // character.stats.bond[i].magic_critial
+  // character.stats.bond[i].magic_critical
   // character.stats.bond[i].magic_def
   // character.stats.bond[i].magic_penetrate
   // character.stats.bond[i].magic_str
@@ -192,7 +192,7 @@ let checkCharacter = async (character) => {
   let hp86 = hp + character.stats.promotion[7].hp;
   let hpRecoveryRate86 = hpRecoveryRate + character.stats.promotion[7].hp_recovery_rate;
   let lifesteal86 = lifesteal + character.stats.promotion[7].life_steal;
-  let magicCritRate86 = magicCritRate + character.stats.promotion[7].magic_critial;
+  let magicCritRate86 = magicCritRate + character.stats.promotion[7].magic_critical;
   let magicDefense86 = magicDefense + character.stats.promotion[7].magic_def;
   let magicPenetrate86 = magicPenetrate + character.stats.promotion[7].magic_penetrate;
   let magicAttack86 = magicAttack + character.stats.promotion[7].magic_str;
@@ -210,7 +210,7 @@ let checkCharacter = async (character) => {
   let hp93 = hp + character.stats.promotion[8].hp;
   let hpRecoveryRate93 = hpRecoveryRate + character.stats.promotion[8].hp_recovery_rate;
   let lifesteal93 = lifesteal + character.stats.promotion[8].life_steal;
-  let magicCritRate93 = magicCritRate + character.stats.promotion[8].magic_critial;
+  let magicCritRate93 = magicCritRate + character.stats.promotion[8].magic_critical;
   let magicDefense93 = magicDefense + character.stats.promotion[8].magic_def;
   let magicPenetrate93 = magicPenetrate + character.stats.promotion[8].magic_penetrate;
   let magicAttack93 = magicAttack + character.stats.promotion[8].magic_str;
@@ -231,7 +231,7 @@ let checkCharacter = async (character) => {
     hp86 = hp86 + (equip.base.hp * 2)
     hpRecoveryRate86 = hpRecoveryRate86 + (equip.base.hp_recovery_rate * 2)
     lifesteal86 = lifesteal86 + (equip.base.life_steal * 2)
-    magicCritRate86 = magicCritRate86 + (equip.base.magic_critial * 2)
+    magicCritRate86 = magicCritRate86 + (equip.base.magic_critical * 2)
     magicDefense86 = magicDefense86 + (equip.base.magic_def * 2)
     magicPenetrate86 = magicPenetrate86 + (equip.base.magic_penetrate * 2)
     magicAttack86 = magicAttack86 + (equip.base.magic_str * 2)
@@ -252,7 +252,7 @@ let checkCharacter = async (character) => {
     hp93 = hp93 + (equip.base.hp * 2)
     hpRecoveryRate93 = hpRecoveryRate93 + (equip.base.hp_recovery_rate * 2)
     lifesteal93 = lifesteal93 + (equip.base.life_steal * 2)
-    magicCritRate93 = magicCritRate93 + (equip.base.magic_critial * 2)
+    magicCritRate93 = magicCritRate93 + (equip.base.magic_critical * 2)
     magicDefense93 = magicDefense93 + (equip.base.magic_def * 2)
     magicPenetrate93 = magicPenetrate93 + (equip.base.magic_penetrate * 2)
     magicAttack93 = magicAttack93 + (equip.base.magic_str * 2)
@@ -273,9 +273,10 @@ let checkCharacter = async (character) => {
   hpRecoveryRateDisplay.innerText = `HP Recovery 8-6: ${Math.floor(hpRecoveryRate86)}\nHP Recovery 9-3: ${Math.floor(hpRecoveryRate93)}`
   lifestealDisplay.innerText = `HP Drain 8-6: ${Math.floor(lifesteal86)}\nHP Drain 9-3: ${Math.floor(lifesteal93)}`
   magicCritRateDisplay.innerText = `Magic Crit Rate 8-6: ${Math.floor(magicCritRate86)}\nMagic Crit Rate 9-3: ${Math.floor(magicCritRate93)}`
+  console.log(magicCritRate)
   magicDefenseDisplay.innerText = `Magic Defense 8-6: ${Math.floor(magicDefense86)}\nMagic Defense 9-3: ${Math.floor(magicDefense93)}`
   // magicPenetrateDisplay.innerText = `stat 8-6: ${Math.floor(stat)}\nstat 9-3: ${Math.floor(stat)}`
-  magicAttackDisplay.innerText = `Magic Attack 8-6: ${Math.floor(magicAttack86)}\nMagic Attack 9-3: ${Math.floor(magicAttack93)}}`
+  magicAttackDisplay.innerText = `Magic Attack 8-6: ${Math.floor(magicAttack86)}\nMagic Attack 9-3: ${Math.floor(magicAttack93)}`
   physicalCritRateDisplay.innerText = `Physical Crit Rate 8-6: ${Math.floor(physicalCritRate86)}\nPhysical Crit Rate 9-3: ${Math.floor(physicalCritRate93)}`
   // physicalPenetrateDisplay.innerText = `stat 8-6: ${Math.floor(stat)}\nstat 9-3: ${Math.floor(stat)}`
   // waveTpRecoveryDisplay.innerText = `stat 8-6: ${Math.floor(stat)}\nstat 9-3: ${Math.floor(stat)}`
